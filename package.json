@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "quiet.works",
   "scripts": {
-    "start": "live-server public",
-    "build": "cp node_modules/normalize.css/normalize.css public/"
+    "start": "live-server docs",
+    "build": "cp node_modules/normalize.css/normalize.css docs/"
   },
   "keywords": [],
   "author": "",
