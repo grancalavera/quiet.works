@@ -1,0 +1,69 @@
+:root {
+  --dark-orange: #ff8811ff;
+  --platinum: #e8e8e8ff;
+  --may-green: #2e933cff;
+  --jet: #363636ff;
+  --eerie-black: #191919ff;
+
+  --hsl-dark-orange: hsla(30, 100%, 53%, 1);
+  --hsl-platinum: hsla(0, 0%, 91%, 1);
+  --hsl-may-green: hsla(128, 52%, 38%, 1);
+  --hsl-jet: hsla(0, 0%, 21%, 1);
+  --hsl-eerie-black: hsla(0, 0%, 10%, 1);
+
+  --font-header: "Bitter", serif;
+  --font-content: "Open Sans", sans-serif;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  font-family: var(--font-content);
+  background-color: var(--platinum);
+  color: var(--eerie-black);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* https://css-tricks.com/rem-global-em-local/ */
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 4em 0 0 4em;
+}
+
+h1 {
+  font-family: var(--font-header);
+  font-weight: 300;
+  font-size: 2em;
+  color: var(--jet);
+}
+
+.accent {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5em;
+}
+
+.accent:before,
+.accent:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.accent:before {
+  background-color: var(--may-green);
+  height: 4px;
+  bottom: 0;
+}
+
+.accent:after {
+  background-color: var(--dark-orange);
+  height: 8px;
+  bottom: -6px;
+}

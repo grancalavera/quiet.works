@@ -1,0 +1,19 @@
+{
+  "name": "quiet.works",
+  "version": "1.0.0",
+  "description": "quiet.works",
+  "scripts": {
+    "start": "live-server public",
+    "build": "cp node_modules/normalize.css/normalize.css public/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "8.0.1"
+  },
+  "devDependencies": {
+    "live-server": "1.2.1"
+  }
+}
