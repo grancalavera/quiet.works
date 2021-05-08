@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "quiet.works",
   "scripts": {
-    "start": "live-server docs",
-    "build": "cp node_modules/normalize.css/normalize.css docs/"
+    "build": "mkdir -p dist && yarn copy:css && yarn copy:public",
+    "start": "live-server public",
+    "copy:css": "cp node_modules/normalize.css/normalize.css public/",
+    "copy:public": "cp public/* dist"
   },
   "keywords": [],
   "author": "",
